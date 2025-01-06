@@ -1,0 +1,110 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #eaeaea;
+}
+
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 280px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.captcha-area {
+  margin-bottom: 15px;
+}
+
+.captcha-display {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f7f7f7;
+}
+
+.captcha-text-field {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 2px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.reload-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #007BFF;
+  transition: transform 0.2s ease-in-out;
+}
+
+.reload-btn:hover {
+  transform: rotate(90deg);
+}
+
+.captcha-input input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.confirm-btn:hover:enabled {
+  background-color: #0056b3;
+}
+
+.msg-field {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
